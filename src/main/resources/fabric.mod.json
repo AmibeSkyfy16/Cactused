@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "cactused",
+  "version": "${version}",
+  "name": "cactused",
+  "description": "A cactused mod",
+  "authors": [
+    "Skyfy16"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/cactused/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "ch.skyfy.cactused.CactusedMod"
+      }
+    ]
+  },
+  "mixins": [
+    "cactused.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.19.2",
+    "fabric-language-kotlin": ">=1.8.3+kotlin.1.7.10"
+  }
+}
